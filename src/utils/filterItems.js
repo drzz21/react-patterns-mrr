@@ -1,7 +1,7 @@
-export function filterItems(query, items) {
+export function filterItems(query, dataset) {
 	if (query === "") {
-	  return items;
+		return dataset;
 	}
 	// return items.filter((item) => item.title.indexOf(query) === 0);
-	return items.filter(item=>item.title.toLowerCase().includes(query.toLowerCase()));
-  }
+	return dataset.filter(item => item.title.toLowerCase().includes(query.toLowerCase()));
+}

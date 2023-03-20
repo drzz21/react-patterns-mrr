@@ -4,10 +4,8 @@ export default function Todo({ title, completed }) {
 	}
 	return (
 	  <div>
-		<div>
 		  <input type="checkbox" checked={completed} onChange={handleChange} />
 		  {title}
-		</div>
 	  </div>
 	);
   }
